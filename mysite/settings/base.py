@@ -60,6 +60,10 @@ MIDDLEWARE = [
     "wagtail.contrib.redirects.middleware.RedirectMiddleware",
 ]
 
+ALLOWED_HOSTS = [
+    ".eu-west-1.compute.amazonaws.com"
+]
+
 ROOT_URLCONF = "mysite.urls"
 
 TEMPLATES = [
