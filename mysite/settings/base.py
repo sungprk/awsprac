@@ -47,8 +47,6 @@ INSTALLED_APPS = [
     "django.contrib.sites",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'django_comments_xtd',
-    'django_comments',
 ]
 
 MIDDLEWARE = [
@@ -168,12 +166,3 @@ WAGTAILSEARCH_BACKENDS = {
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
 WAGTAILADMIN_BASE_URL = "http://example.com"
-
-# Comment
-COMMENTS_APP = 'django_comments_xtd'
-COMMENTS_XTD_MAX_THREAD_LEVEL = 2
-COMMENTS_XTD_CONFIRM_EMAIL = True
-COMMENTS_XTD_SALT = (b"Timendi causa est nescire. "
-                     b"Aequam memento rebus in arduis servare mentem.")
-COMMENTS_XTD_FROM_EMAIL = "noreply@example.com"
-COMMENTS_XTD_CONTACT_EMAIL = "helpdesk@example.com"
